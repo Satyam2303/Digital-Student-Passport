@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_25sdp"
+        android:background="@color/transparent1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--&lt;!&ndash;            android:src="@drawable/clg_logo"&ndash;&gt;-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            />-->
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_gravity="center"
+            app:lottie_fileName="splash.json"
+            app:lottie_autoPlay="true"
+            android:layout_marginTop="@dimen/_100sdp"
+            app:lottie_loop="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:gravity="center_horizontal"
+            android:text="PICT presents"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            app:fontFamily="@font/acme" />
+
+        <TextView
+            android:id="@+id/msg2TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="Digital Student Platform"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold"
+            app:fontFamily="@font/acme"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="By Satyam Munot"
+            app:fontFamily="@font/acme"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

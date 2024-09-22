@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:gravity="center"
+    tools:context=".HomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/clg_logo"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            />-->
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/transparent1"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_25sdp"
+                app:cardElevation="@dimen/_15sdp"
+                android:id="@+id/addNotice">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/circle_red"
+                        android:src="@drawable/ic_notice"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_15sdp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/lightGrey"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Upload Notice"
+                        android:textColor="@color/textColor"
+                        app:fontFamily="@font/acme" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_25sdp"
+                app:cardElevation="@dimen/_15sdp"
+                android:id="@+id/addgalleryimage">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/circle_pink"
+                        android:src="@drawable/ic_image"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_15sdp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/lightGrey"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Upload Image"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/textColor"
+                        app:fontFamily="@font/acme" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_25sdp"
+                app:cardElevation="@dimen/_15sdp"
+                android:id="@+id/addebook">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/circle_red"
+                        android:src="@drawable/ic_upload"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_15sdp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/lightGrey"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Upload EBook"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/textColor"
+                        app:fontFamily="@font/acme" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_25sdp"
+                app:cardElevation="@dimen/_15sdp"
+                android:id="@+id/fac">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/circle_pink"
+                        android:src="@drawable/ic_group"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_15sdp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/lightGrey"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Upload Faculty"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/textColor"
+                        app:fontFamily="@font/acme" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_25sdp"
+                app:cardElevation="@dimen/_15sdp"
+                android:id="@+id/deleteNotice">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/circle_red"
+                        android:src="@drawable/ic_delete"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_15sdp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/lightGrey"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Delete Notice"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/textColor"
+                        app:fontFamily="@font/acme" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/student_data"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_25sdp"
+                app:cardElevation="@dimen/_15sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/circle_pink"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:src="@drawable/ic_student"
+                        android:padding="@dimen/_15sdp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/lightGrey"
+                        android:layout_marginTop="@dimen/_8sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Student Data Download"
+                        android:textColor="@color/textColor"
+                        app:fontFamily="@font/acme" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

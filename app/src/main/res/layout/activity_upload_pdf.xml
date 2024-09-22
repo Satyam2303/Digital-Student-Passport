@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".UploadPdfActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addpdf"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_25sdp"
+            app:cardElevation="@dimen/_15sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:background="@drawable/circle_red"
+                    android:src="@drawable/ic_baseline_picture_as_pdf_24"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_15sdp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/lightGrey"
+                    android:layout_marginTop="@dimen/_8sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Select PDF"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/textColor"
+                    app:fontFamily="@font/acme" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/pdfTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="PDF"
+            android:textSize="@dimen/_16ssp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:background="@color/transparent1"
+            app:fontFamily="@font/acme" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/pdfTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@color/transparent1"
+            android:hint="Enter PDF Title"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/acme"
+            android:inputType="textEmailAddress"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textColorHint="#D3D3D3" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadPdfBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_button_background"
+            android:text="Upload PDF"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dwPdfbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_button_background"
+            android:text="Download PDF"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+</ScrollView>
